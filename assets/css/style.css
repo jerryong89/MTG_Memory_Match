@@ -1,1 +1,94 @@
 
+h1 {
+  font-size: 60pt;
+}
+
+aside > * {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  background-color: #87cdeb;
+  margin: 10px 40px;
+  text-align: center;
+  font-size: 20pt;
+}
+
+main {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+main > * {
+  /* background-image: url("../images/lfz-card.jpg");
+  background-size: cover; */
+  margin:2px;
+  height: 180px;
+  position: relative;
+
+}
+
+body {
+ background-image: url("../images/lfz-background.jpg");
+ background-size: cover;
+ display: flex;
+ justify-content: center;
+}
+
+.card-front {
+  height: 100%;
+  width: 100%;
+  background-size:cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: absolute;
+}
+
+.card-back {
+  height: 100%;
+  width: 100%;
+  background-size:cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: absolute;
+  background-image: url("../images/lfz-card.jpg");
+}
+
+.js-logo {
+  background-image: url("../images/js-logo.png")
+}
+
+.css-logo {
+  background-image: url("../images/css-logo.png");
+}
+
+.docker-logo {
+  background-image: url("../images/docker-logo.jpg");
+}
+
+.gitHub-logo {
+  background-image: url("../images/gitHub-logo.png");
+}
+
+.html-logo {
+  background-image: url("../images/html-logo.png");
+}
+
+.mysql-logo {
+  background-image: url("../images/mysql-logo.jpg");
+}
+
+.node-logo {
+  background-image: url("../images/node-logo.png")
+}
+
+.php-logo {
+  background-image: url("../images/php-logo.jpeg")
+}
+
+.react-logo {
+  background-image: url("../images/react-logo.png")
+}
+
+.hidden {
+  display: none;
+}
