@@ -2,6 +2,8 @@ var firstCardClicked;
 var secondCardClicked;
 var firstCardClasses;
 var secondCardClasses;
+var maxMatches = 9;
+var matches = 0;
 
 var container = document.getElementById("gameCards");
 container.addEventListener("click", handleClick);
@@ -22,6 +24,22 @@ function handleClick(event) {
       container.addEventListener("click", handleClick);
       firstCardClicked = !firstCardClicked;
       secondCardClicked = !secondCardClicked;
+      matches++;
+      console.log(matches)
+      if (matches === maxMatches) {
+        console.log("you win")
+        var h1Element = document.createElement("h1");
+        var win = document.createTextNode("Congratulations, You have Won!!!");
+        h1Element.appendChild(win)
+        var modalDiv = document.createElement("div");
+        modalDiv.setAttribute("class", "modal-content");
+        modalDiv.appendChild(h1Element);
+        var winDiv = document.createElement("div");
+        winDiv.setAttribute("class", "modal-overlay")
+        winDiv.appendChild(modalDiv)
+        var bodyTag = document.querySelector("body")
+        bodyTag.appendChild(winDiv)
+      }
     } else {
       setTimeout(function () {
         firstCardClicked.classList.remove("hidden"),
