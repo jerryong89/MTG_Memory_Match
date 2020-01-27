@@ -33,17 +33,25 @@ function handleClick(event) {
       // console.log(matches)
       if (matches === maxMatches) {
         console.log("you win")
-        var h1Element = document.createElement("h1");
-        var win = document.createTextNode("Congratulations, You have Won!!!");
-        h1Element.appendChild(win)
-        var modalDiv = document.createElement("div");
-        modalDiv.setAttribute("class", "modal-content");
-        modalDiv.appendChild(h1Element);
-        var winDiv = document.createElement("div");
-        winDiv.setAttribute("class", "modal-overlay")
-        winDiv.appendChild(modalDiv)
-        var bodyTag = document.querySelector("body")
-        bodyTag.appendChild(winDiv)
+        var modalcontainer = document.getElementsByClassName("modal-overlay")
+        modalcontainer.classList.remove("hidden")
+        // var h1Element = document.createElement("h1");
+        // var win = document.createTextNode("Congratulations, You have Won!!!");
+        // h1Element.appendChild(win)
+        // var modalDiv = document.createElement("div");
+        // modalDiv.setAttribute("class", "modal-content");
+        // modalDiv.appendChild(h1Element);
+        // var winDiv = document.createElement("div");
+        // winDiv.setAttribute("class", "modal-overlay");
+        // winDiv.appendChild(modalDiv);
+        // var bodyTag = document.querySelector("body");
+        // bodyTag.appendChild(winDiv);
+        // var resetbutton = document.createElement("button");
+        // resetbutton.setAttribute("id", "resetId")
+        // var containerId = document.getElementById("resetId");
+        // var playAgain = document.createTextNode("Would You Like to Play Again?");
+        // resetbutton.appendChild(playAgain);
+        // h1Element.appendChild(resetbutton);
       }
     } else {
       setTimeout(function () {
@@ -60,10 +68,26 @@ function handleClick(event) {
 }
 function displayStats(){
   document.getElementById("gamesplayedid").textContent = gamesPlayed;
-
   document.getElementById("attemptsid").textContent = attempts;
-  document.getElementById("accuracyid").textContent = accuracy(matches, attempts);
+  document.getElementById("accuracyid").textContent = calculateAccuracy(matches, attempts);
 }
-function accuracy(matches, attempts) {
-  return(Math.trunc((matches/attempts)*100)) +"%"
+function calculateAccuracy(matches, attempts) {
+  return(Math.trunc((matches/attempts)*100)) + "%"
 };
+
+function resetGame() {
+  attempts=0;
+  matches=0;
+  gamesPlayed++;
+  displayStats();
+  resetCards();
+}
+
+function resetCards() {
+  var hiddenCards = document.querySelectorAll(".card-back");
+  for (var cardArray = 0; cardArray < hiddenCards.length; cardArray++){
+    hiddenCards[cardArray].classList.remove("hidden")
+  }
+}
+var continerId = document.getElementById("resetId")
+containerId.addEventListener("click", resetGame());
