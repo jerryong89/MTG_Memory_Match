@@ -29,12 +29,7 @@ function handleClick(event) {
       matches++;
       attempts++;
       displayStats()
-      console.log(attempts);
-      // console.log(matches)
       if (matches === maxMatches) {
-        console.log("you win")
-        // var modalcontainer = document.getElementsByClassName("modal-overlay");
-        // modalcontainer.classList.remove("hidden");
         var h1Element = document.createElement("h1");
         var win = document.createTextNode("Congratulations, You have Won!!!");
         h1Element.appendChild(win)
@@ -47,13 +42,15 @@ function handleClick(event) {
         var bodyTag = document.querySelector("body");
         bodyTag.appendChild(winDiv);
 
-        var resetbutton = document.createElement("button");
-        resetbutton.setAttribute("id", "resetId")
-        var containerId = document.getElementById("resetId");
+        var resetButton = document.createElement("button");
+        resetButton.setAttribute("id", "resetId")
+        // var containerId = document.getElementById("resetId");
         var playAgain = document.createTextNode("Would You Like to Play Again?");
-        resetbutton.appendChild(playAgain);
-        h1Element.appendChild(resetbutton);
-        containerId.addEventListener("click", resetGame);
+        resetButton.appendChild(playAgain);
+        h1Element.appendChild(resetButton);
+        // containerId.addEventListener("click", resetGame);
+        // document.getElementById("resetId").addEventListener("click", resetGame);
+        resetButton.addEventListener("click", resetGame);
 
       }
     } else {
@@ -64,31 +61,39 @@ function handleClick(event) {
           secondCardClicked = !secondCardClicked,
           attempts++;
         displayStats()
-          container.addEventListener("click", handleClick)
+        container.addEventListener("click", handleClick)
       }, 1500);
     }
   }
 }
-function displayStats(){
+function displayStats() {
   document.getElementById("gamesplayedid").textContent = gamesPlayed;
   document.getElementById("attemptsid").textContent = attempts;
   document.getElementById("accuracyid").textContent = calculateAccuracy(matches, attempts);
 }
 function calculateAccuracy(matches, attempts) {
-  return(Math.trunc((matches/attempts)*100)) + "%"
+  if (!attempts) {
+    return "0%";
+  }
+  return (Math.trunc((matches / attempts) * 100)) + "%";
 };
 
 function resetGame() {
-  attempts=0;
-  matches=0;
+  attempts = 0;
+  matches = 0;
   gamesPlayed++;
   displayStats();
   resetCards();
+  hideModal();
 }
-
 function resetCards() {
   var hiddenCards = document.querySelectorAll(".card-back");
-  for (var cardArray = 0; cardArray < hiddenCards.length; cardArray++){
+  for (var cardArray = 0; cardArray < hiddenCards.length; cardArray++) {
     hiddenCards[cardArray].classList.remove("hidden")
   }
+}
+function hideModal() {
+  var parent = document.getElementsByTagName("body")[0]
+  var child = parent.getElementsByClassName("modal-overlay")[0]
+  parent.removeChild(child)
 }
