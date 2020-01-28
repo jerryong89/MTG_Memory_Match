@@ -1,4 +1,3 @@
-
 h1 {
   font-size: 60pt;
 }
@@ -19,8 +18,6 @@ main {
 }
 
 main > * {
-  /* background-image: url("../images/lfz-card.jpg");
-  background-size: cover; */
   margin:2px;
   height: 180px;
   position: relative;
@@ -91,4 +88,24 @@ body {
 
 .hidden {
   display: none;
+}
+
+.modal-overlay {
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.modal-content {
+  background-color:red;
+  width: 50%;
+  text-align: center;
+}
+
+#resetId {
+  padding: 20px;
+  font-size: 16pt;
+
 }
