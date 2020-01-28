@@ -33,25 +33,28 @@ function handleClick(event) {
       // console.log(matches)
       if (matches === maxMatches) {
         console.log("you win")
-        var modalcontainer = document.getElementsByClassName("modal-overlay")
-        modalcontainer.classList.remove("hidden")
-        // var h1Element = document.createElement("h1");
-        // var win = document.createTextNode("Congratulations, You have Won!!!");
-        // h1Element.appendChild(win)
-        // var modalDiv = document.createElement("div");
-        // modalDiv.setAttribute("class", "modal-content");
-        // modalDiv.appendChild(h1Element);
-        // var winDiv = document.createElement("div");
-        // winDiv.setAttribute("class", "modal-overlay");
-        // winDiv.appendChild(modalDiv);
-        // var bodyTag = document.querySelector("body");
-        // bodyTag.appendChild(winDiv);
-        // var resetbutton = document.createElement("button");
-        // resetbutton.setAttribute("id", "resetId")
-        // var containerId = document.getElementById("resetId");
-        // var playAgain = document.createTextNode("Would You Like to Play Again?");
-        // resetbutton.appendChild(playAgain);
-        // h1Element.appendChild(resetbutton);
+        // var modalcontainer = document.getElementsByClassName("modal-overlay");
+        // modalcontainer.classList.remove("hidden");
+        var h1Element = document.createElement("h1");
+        var win = document.createTextNode("Congratulations, You have Won!!!");
+        h1Element.appendChild(win)
+        var modalDiv = document.createElement("div");
+        modalDiv.setAttribute("class", "modal-content");
+        modalDiv.appendChild(h1Element);
+        var winDiv = document.createElement("div");
+        winDiv.setAttribute("class", "modal-overlay");
+        winDiv.appendChild(modalDiv);
+        var bodyTag = document.querySelector("body");
+        bodyTag.appendChild(winDiv);
+
+        var resetbutton = document.createElement("button");
+        resetbutton.setAttribute("id", "resetId")
+        var containerId = document.getElementById("resetId");
+        var playAgain = document.createTextNode("Would You Like to Play Again?");
+        resetbutton.appendChild(playAgain);
+        h1Element.appendChild(resetbutton);
+        containerId.addEventListener("click", resetGame);
+
       }
     } else {
       setTimeout(function () {
@@ -89,5 +92,3 @@ function resetCards() {
     hiddenCards[cardArray].classList.remove("hidden")
   }
 }
-var continerId = document.getElementById("resetId")
-containerId.addEventListener("click", resetGame());
