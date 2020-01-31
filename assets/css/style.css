@@ -25,7 +25,7 @@ main > * {
 }
 
 body {
- background-image: url("../images/lfz-background.jpg");
+ background-image: url("../images/mtgbackground.jpg");
  background-size: cover;
  display: flex;
  justify-content: center;
@@ -43,31 +43,63 @@ body {
 .card-back {
   height: 100%;
   width: 100%;
-  background-size:cover;
+  background-size:contain;
   background-repeat: no-repeat;
   background-position: center;
   position: absolute;
-  background-image: url("../images/lfz-card.jpg");
+  border-radius: 20%;
+  background-image: url("../images/mtgcardback.jpg");
 }
 
 .js-logo {
-  background-image: url("../images/js-logo.png")
+  background-image: url("../images/mtgforest.jpg");
+  height: 100%;
+  width: 100%;
+  background-size:contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: absolute;
+  border-radius: 20%
 }
 
 .css-logo {
-  background-image: url("../images/css-logo.png");
+  background-image: url("../images/mtgisland.jpg");
+  height: 100%;
+  width: 100%;
+  background-size:contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: absolute;
 }
 
 .docker-logo {
-  background-image: url("../images/docker-logo.jpg");
+  background-image: url("../images/mtgmountain.jpg");
+  height: 100%;
+  width: 100%;
+  background-size:contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: absolute;
 }
 
 .gitHub-logo {
-  background-image: url("../images/gitHub-logo.png");
+  background-image: url("../images/mtgplains.jpg");
+  height: 100%;
+  width: 100%;
+  background-size:contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: absolute;
 }
 
 .html-logo {
-  background-image: url("../images/html-logo.png");
+  background-image: url("../images/mtgswamp.jpg");
+  height: 100%;
+  width: 100%;
+  background-size:contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: absolute;
 }
 
 .mysql-logo {
