@@ -1,5 +1,5 @@
 h1 {
-  font-size: 60pt;
+  font-size: 5vw;
 }
 
 aside > * {
@@ -47,7 +47,6 @@ body {
   background-repeat: no-repeat;
   background-position: center;
   position: absolute;
-  border-radius: 20%;
   background-image: url("../images/mtgcardback.jpg");
 }
 
@@ -59,7 +58,6 @@ body {
   background-repeat: no-repeat;
   background-position: center;
   position: absolute;
-  border-radius: 20%
 }
 
 .css-logo {
@@ -103,19 +101,43 @@ body {
 }
 
 .mysql-logo {
-  background-image: url("../images/mysql-logo.jpg");
+  background-image: url("../images/blacklotus.jpg");
+  height: 100%;
+  width: 100%;
+  background-size:contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: absolute;
 }
 
 .node-logo {
-  background-image: url("../images/node-logo.png")
+  background-image: url("../images/Garruk.jpg");
+  height: 100%;
+  width: 100%;
+  background-size:contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: absolute;
 }
 
 .php-logo {
-  background-image: url("../images/php-logo.jpeg")
+  background-image: url("../images/Nicol-Bolas.jpg");
+  height: 100%;
+  width: 100%;
+  background-size:contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: absolute;
 }
 
 .react-logo {
-  background-image: url("../images/react-logo.png")
+  background-image: url("../images/Nicol-Bolas2.jpg");
+  height: 100%;
+  width: 100%;
+  background-size:contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: absolute;
 }
 
 .hidden {
@@ -141,3 +163,73 @@ body {
   font-size: 16pt;
 
 }
+
+/* ----------- iPhone 6, 6S, 7 and 8 ----------- */
+
+/* Portrait and Landscape */
+@media only screen
+  and (min-device-width: 375px)
+  and (max-device-width: 667px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+h1 {
+  font-size:3vw;
+}
+}
+
+/* Portrait */
+@media only screen
+  and (min-device-width: 375px)
+  and (max-device-width: 667px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: portrait) {
+h1 {
+  font-size:3vw;
+}
+}
+
+/* Landscape */
+@media only screen
+  and (min-device-width: 375px)
+  and (max-device-width: 667px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: landscape) {
+h1 {
+  font-size:3vw;
+}
+} 
+
+/* ----------- iPad 3, 4 and Pro 9.7" ----------- */
+
+/* Portrait and Landscape */
+@media only screen
+  and (min-device-width: 768px)
+  and (max-device-width: 1024px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+h1 {
+  font-size:4vw;
+}
+}
+
+/* Portrait */
+@media only screen
+  and (min-device-width: 768px)
+  and (max-device-width: 1024px)
+  and (orientation: portrait)
+  and (-webkit-min-device-pixel-ratio: 2) {
+    h1 {
+  font-size:4vw;
+}
+
+}
+
+/* Landscape */
+@media only screen
+  and (min-device-width: 768px)
+  and (max-device-width: 1024px)
+  and (orientation: landscape)
+  and (-webkit-min-device-pixel-ratio: 2) {
+    h1 {
+  font-size:4vw;
+}
+
+} 
