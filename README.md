@@ -13,8 +13,8 @@ Link: https://memory-match.jerry-ong.com
 - Users can click on cards to match the different Major League Baseball teams.
 - Users can see a live view of the statistics during the games
     - Games
-    - Batting Average (attempts / matches)
-    - At Bats (attempts)
+    - Matches
+    - Attempts
 
 
 ## Example of App
