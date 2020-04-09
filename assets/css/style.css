@@ -22,7 +22,7 @@ main {
 }
 
 main > * {
-  height: 270px;
+  height: 250px;
   position: relative;
 
 }
@@ -41,12 +41,14 @@ body {
   background-repeat: no-repeat;
   background-position: center;
   position: absolute;
+  border-radius: 7pt ;
 }
 
 .card-back {
   height: 100%;
   width: 100%;
   background-size:contain;
+  border-radius: 6pt;
   background-repeat: no-repeat;
   background-position: center;
   position: absolute;
@@ -55,6 +57,7 @@ body {
 
 main div:hover {
   box-shadow: 0 5px 15px rgba(216, 20, 20, 0.524);
+  border-radius: 7pt;
 }
 
 .js-logo {
@@ -207,10 +210,10 @@ main div:hover {
   justify-content: center;
 }
 main > * {
-  height: 125px;
+  height: 133px;
     margin-bottom: -90px;
     margin-top: -82px;
-    margin-left: 88px;
+    margin-left: 61px;
   }
 aside > * {
   height: 5%;
