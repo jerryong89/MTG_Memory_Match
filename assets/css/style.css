@@ -203,21 +203,23 @@ body {
   justify-content: center;
 }
 main > * {
-    margin: 30px;
+    margin: -15px;
     margin-bottom: -90px;
-    margin-top: -30px;
+    margin-top: -82px;
+    margin-left: 88px;
   }
 aside > * {
-  height: 3%;
-  width: 60%;
-  padding-top: 30px;
-  padding-bottom: 30px;
+  height: 5%;
+  width: 100%;
+  padding-top: 40px;
+  padding-bottom: 20px;
   padding-right: 20px;
+  padding-left: 20px;
   color: maroon;
   border: black;
   border-style: solid;
   text-align: center;
-  font-size: 2vw;
+  font-size: 2.5vw;
   border-radius: 20pt;
 }
 }
@@ -238,7 +240,9 @@ aside > * {
   background-size: 1024px 768px;
   }
   main > * {
-    margin: 2px
+    margin: 2px;
+    margin-top: 15px;
+    margin-bottom: -15px;
   }
   .ipadrow {
   width: 100%;
@@ -319,16 +323,19 @@ aside > * {
   }
   main > * {
     margin: 1px;
-    margin-bottom: 8px;
-    height: 80px;
+    margin-top: -90px;
+    height: 200px;
+    width: 20px;
     position: relative;
   }
   aside > * {
-    height: 1%;
-    width: 60%;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    padding-right: 15px;
+    height: 10px;
+    width: 100%;
+    padding-top: 1px;
+    padding-bottom: 4px;
+    margin-left: -32px;
+    margin-top: -31px;
+    margin-bottom: 45px;
     color: maroon;
     border: black;
     border-style: solid;
