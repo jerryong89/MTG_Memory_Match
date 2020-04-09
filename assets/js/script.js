@@ -92,9 +92,9 @@ function hideModal() {
 }
 
 function shuffle() {
-  var arr = ['js-logo', 'css-logo', 'docker-logo', 'gitHub-logo', 'html-logo', 'mysql-logo',
-    'node-logo', 'php-logo', 'react-logo', 'js-logo', 'css-logo', 'docker-logo', 'gitHub-logo', 'html-logo', 'mysql-logo',
-    'node-logo', 'php-logo', 'react-logo']
+  var arr = ['forest', 'island', 'mountain', 'plain', 'swamp', 'blackLotus', 'garruk',
+    'nicolBolas', 'nicolBolas2', 'forest', 'island', 'mountain', 'plain', 'swamp', 'blackLotus', 'garruk',
+    'nicolBolas', 'nicolBolas2']
 
   for (k = 0; k < arr.length; k++) {
     var randNum = Math.floor(Math.random() * arr.length);
