@@ -18,6 +18,6 @@ Link: https://memory-match.jerry-ong.com
 
 
 ## Example of App
-![alt text]()
+![alt text](https://github.com/jerryong89/MTG_Memory_Match/blob/master/Example.png)
 
 
