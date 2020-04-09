@@ -1,5 +1,5 @@
 # MTG Memory Match
-
+> - Maintained by: `jerryong89`
 # Description 
 A Magic The Gathering themed card matching game stat tracking CSS3 animation
 
