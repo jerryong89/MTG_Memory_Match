@@ -80,17 +80,11 @@ function resetGame() {
   matches = 0;
   gamesPlayed++;
   displayStats();
-  // resetCards();
   gameCards.innerText = ""
   hideModal();
   shuffle();
 }
-function resetCards() {
-  var hiddenCards = document.querySelectorAll(".card-back");
-  for (var cardArray = 0; cardArray < hiddenCards.length; cardArray++) {
-    hiddenCards[cardArray].classList.remove("hidden")
-  }
-}
+
 function hideModal() {
   var parent = document.getElementsByTagName("body")[0]
   var child = parent.getElementsByClassName("modal-overlay")[0]
