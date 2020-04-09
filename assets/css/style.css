@@ -1,14 +1,18 @@
 h1 {
-  font-size: 60pt;
+  font-size: 5vw;
+  color: maroon;
 }
 
 aside > * {
   padding-top: 30px;
   padding-bottom: 30px;
-  background-color: #87cdeb;
-  margin: 10px 40px;
+  color: maroon;
+  border: black;
+  border-style: solid;
+  margin: 10px;
   text-align: center;
-  font-size: 20pt;
+  font-size: 2vw;
+  border-radius: 20pt;
 }
 
 main {
@@ -18,104 +22,77 @@ main {
 }
 
 main > * {
-  margin:2px;
-  height: 180px;
+  height: 250px;
   position: relative;
-
 }
 
 body {
- background-image: url("../images/mtgbackground.jpg");
- background-size: cover;
- display: flex;
- justify-content: center;
+  background-image: url("../images/mtgbackground.jpg");
+  background-size: cover;
+  display: flex;
+  justify-content: center;
 }
 
 .card-front {
   height: 100%;
   width: 100%;
-  background-size:cover;
+  background-size:contain;
   background-repeat: no-repeat;
   background-position: center;
   position: absolute;
+  border-radius: 7pt ;
 }
 
 .card-back {
   height: 100%;
   width: 100%;
   background-size:contain;
+  border-radius: 6px;
   background-repeat: no-repeat;
   background-position: center;
   position: absolute;
-  border-radius: 20%;
   background-image: url("../images/mtgcardback.jpg");
 }
 
-.js-logo {
+main div:hover {
+  box-shadow: 0 5px 15px rgba(216, 20, 20, 0.524);
+  border-radius: 7px;
+}
+
+.forest {
   background-image: url("../images/mtgforest.jpg");
-  height: 100%;
-  width: 100%;
-  background-size:contain;
-  background-repeat: no-repeat;
-  background-position: center;
-  position: absolute;
-  border-radius: 20%
 }
 
-.css-logo {
+.island {
   background-image: url("../images/mtgisland.jpg");
-  height: 100%;
-  width: 100%;
-  background-size:contain;
-  background-repeat: no-repeat;
-  background-position: center;
-  position: absolute;
 }
 
-.docker-logo {
+.mountain {
   background-image: url("../images/mtgmountain.jpg");
-  height: 100%;
-  width: 100%;
-  background-size:contain;
-  background-repeat: no-repeat;
-  background-position: center;
-  position: absolute;
 }
 
-.gitHub-logo {
+.plain {
   background-image: url("../images/mtgplains.jpg");
-  height: 100%;
-  width: 100%;
-  background-size:contain;
-  background-repeat: no-repeat;
-  background-position: center;
-  position: absolute;
 }
 
-.html-logo {
+.swamp {
   background-image: url("../images/mtgswamp.jpg");
-  height: 100%;
-  width: 100%;
-  background-size:contain;
-  background-repeat: no-repeat;
-  background-position: center;
-  position: absolute;
 }
 
-.mysql-logo {
-  background-image: url("../images/mysql-logo.jpg");
+.blackLotus {
+  background-image: url("../images/blacklotus.jpg");
 }
 
-.node-logo {
-  background-image: url("../images/node-logo.png")
+.garruk {
+  background-image: url("../images/Garruk.jpg");
 }
 
-.php-logo {
-  background-image: url("../images/php-logo.jpeg")
+.nicolBolas {
+  background-image: url("../images/Nicol-Bolas.jpg");
 }
 
-.react-logo {
-  background-image: url("../images/react-logo.png")
+.nicolBolas2 {
+  background-image: url("../images/Nicol-Bolas2.jpg");
 }
 
 .hidden {
@@ -131,13 +108,199 @@ body {
 }
 
 .modal-content {
-  background-color:red;
   width: 50%;
   text-align: center;
+  background: rgba(240, 248, 255, 0.18);
+  border-radius: 25pt;
 }
 
 #resetId {
   padding: 20px;
   font-size: 16pt;
+}
 
+/* ----------- iPad 3, 4 and Pro 9.7" ----------- */
+/* Portrait */
+@media only screen
+  and (min-device-width: 768px)
+  and (max-device-width: 1024px)
+  and (orientation: portrait)
+  and (-webkit-min-device-pixel-ratio: 2) {
+    h1 {
+      font-size: 6vw;
+    }
+    body {
+      background-image: url("../images/mtgbackground.jpg");
+      background-size: 768px 1024px;
+      display: flex;
+      justify-content: center;
+    }
+    .ipadrow {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      margin-bottom: .5rem;
+      flex-direction: row;
+      justify-content: center;
+    }
+    main > * {
+      height: 133px;
+      margin-bottom: -90px;
+      margin-top: -82px;
+      margin-left: 61px;
+    }
+    aside > * {
+      height: 5%;
+      width: 100%;
+      padding-top: 40px;
+      padding-bottom: 20px;
+      padding-right: 20px;
+      padding-left: 20px;
+      color: maroon;
+      border: black;
+      border-style: solid;
+      text-align: center;
+      font-size: 2.5vw;
+      border-radius: 20pt;
+    }
+}
+
+/* Landscape */
+@media only screen
+  and (min-device-width: 768px)
+  and (max-device-width: 1024px)
+  and (orientation: landscape)
+  and (-webkit-min-device-pixel-ratio: 2) {
+    h1 {
+      font-size:4vw;
+    }
+
+    body {
+      background-image: url("../images/mtgbackground.jpg");
+      display: flex;
+      justify-content: center;
+      background-size: 1024px 768px;
+    }
+
+    main > * {
+      height:165px;
+      margin: 2px;
+      margin-top: 25px;
+      margin-bottom: -15px;
+    }
+
+    .ipadrow {
+      width: 100%;
+      height: 70%;
+      display: flex;
+      margin-bottom: .5rem;
+      flex-direction: row;
+      justify-content: center;
+    }
+
+    aside > * {
+      height: 3%;
+      padding-top: 25px;
+      padding-bottom: 25px;
+      color: maroon;
+      border: black;
+      border-style: solid;
+      text-align: center;
+      font-size: 1.5vw;
+      border-radius: 20pt;
+    }
+}
+
+/* ----------- iPhone 6, 6S, 7 and 8 ----------- */
+/* Portrait */
+@media only screen
+  and (min-device-width: 375px)
+  and (max-device-width: 667px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: portrait) {
+    h1 {
+      font-size:6vw;
+    }
+
+    main > * {
+      height: 77px;
+      margin: 7px;
+      margin-bottom: -90px;
+      margin-top: -70px;
+      margin-left: 25px;
+    }
+
+    aside{
+      margin-top: 50px;
+    }
+
+    aside > * {
+      height: 14px;
+      width: 100%;
+      padding-top: 20px;
+      padding-bottom: 20px;
+      margin-left: 0px;
+      margin-top: -30px;
+      margin-bottom: 45px;
+      color: maroon;
+      border: black;
+      border-style: solid;
+      text-align: center;
+      font-size: 3vw;
+      border-radius: 20pt;
+    }
+
+    body {
+      background-image: url("../images/mtgbackground.jpg");
+      background-size: 375px 667px;
+      display: flex;
+      justify-content: center;
+    }
+}
+
+/* Landscape */
+@media only screen
+  and (min-device-width: 375px)
+  and (max-device-width: 667px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: landscape) {
+    h1 {
+      font-size:5vw;
+    }
+
+    body {
+      background-image: url("../images/mtgbackground.jpg");
+      background-size: 667px 375px;
+      display: flex;
+      justify-content: center;
+    }
+
+    main > * {
+      height: 79px;
+      margin: 1px;
+      margin-top: -67px;
+      position: relative;
+      margin-bottom: -55px;
+    }
+
+    aside > * {
+      height: 10px;
+      width: 100%;
+      padding-top: 1px;
+      padding-bottom: 5px;
+      margin-left: -23px;
+      margin-top: -31px;
+      margin-bottom: 45px;
+      color: maroon;
+      border: black;
+      border-style: solid;
+      text-align: center;
+      font-size: 2vw;
+      border-radius: 20pt;
+    }
+
+    aside {
+      margin-top: 20px;
+      height: 230px
+    }
 }

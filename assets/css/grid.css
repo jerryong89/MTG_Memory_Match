@@ -1,4 +1,4 @@
-.contaier {
+.container {
   width: 100%;
   max-width: 1500px;
   margin: auto;
@@ -50,4 +50,24 @@
   }
 .col-12 {
   width: 96%;
+}
+
+@media only screen
+  and (min-device-width: 375px)
+  and (max-device-width: 667px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: portrait) {
+    .col-2 {
+      width: 21%;
+    }
+}
+
+  @media only screen
+  and (min-device-width: 768px)
+  and (max-device-width: 1024px)
+  and (orientation: portrait)
+  and (-webkit-min-device-pixel-ratio: 2) {
+    .col-2 {
+      width: 21%;
+    }
 }

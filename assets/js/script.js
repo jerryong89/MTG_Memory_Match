@@ -44,12 +44,9 @@ function handleClick(event) {
 
         var resetButton = document.createElement("button");
         resetButton.setAttribute("id", "resetId")
-        // var containerId = document.getElementById("resetId");
         var playAgain = document.createTextNode("Would You Like to Play Again?");
         resetButton.appendChild(playAgain);
         h1Element.appendChild(resetButton);
-        // containerId.addEventListener("click", resetGame);
-        // document.getElementById("resetId").addEventListener("click", resetGame);
         resetButton.addEventListener("click", resetGame);
 
       }
@@ -83,17 +80,40 @@ function resetGame() {
   matches = 0;
   gamesPlayed++;
   displayStats();
-  resetCards();
+  gameCards.innerText = ""
   hideModal();
+  shuffle();
 }
-function resetCards() {
-  var hiddenCards = document.querySelectorAll(".card-back");
-  for (var cardArray = 0; cardArray < hiddenCards.length; cardArray++) {
-    hiddenCards[cardArray].classList.remove("hidden")
-  }
-}
+
 function hideModal() {
   var parent = document.getElementsByTagName("body")[0]
   var child = parent.getElementsByClassName("modal-overlay")[0]
   parent.removeChild(child)
 }
+
+function shuffle() {
+  var arr = ['forest', 'island', 'mountain', 'plain', 'swamp', 'blackLotus', 'garruk',
+    'nicolBolas', 'nicolBolas2', 'forest', 'island', 'mountain', 'plain', 'swamp', 'blackLotus', 'garruk',
+    'nicolBolas', 'nicolBolas2']
+
+  for (k = 0; k < arr.length; k++) {
+    var randNum = Math.floor(Math.random() * arr.length);
+    var temp = arr[k];
+    arr[k] = arr[randNum];
+    arr[randNum] = temp;
+  }
+
+  for (i = 0; i < arr.length; i++) {
+    var newMain = document.querySelector('#gameCards');
+    var newCard = document.createElement('div');
+    newCard.classList.add('card', 'col-2');
+    var cardFront = document.createElement('div');
+    cardFront.classList.add('card-front', arr[i]);
+    var cardBack = document.createElement('div');
+    cardBack.classList.add('card-back');
+    newCard.appendChild(cardFront);
+    newCard.appendChild(cardBack);
+    newMain.appendChild(newCard);
+  }
+}
+shuffle()
