@@ -29,14 +29,14 @@ Link: https://memory-match.jerry-ong.com
 
 1. Clone the repository.
 
-    ```shell
-    git clone https://github.com/jerryong89/MTG_Memory-Match.git
-    ```
+```shell
+git clone https://github.com/jerryong89/MTG_Memory-Match.git
+```
 
 2. Change directory to clone folder.
 
-    ```shell
-    cd memory-match/
-    ```
+```shell
+cd memory-match/
+```
 
 3. Go to `index.html` in Text Editor and open in browser.
