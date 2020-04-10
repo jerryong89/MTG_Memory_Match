@@ -21,7 +21,7 @@ Link: https://memory-match.jerry-ong.com
     - Attempts
 - Mobile Responsiveness
 
-## Example of App
+## Preview
 ![alt text](https://github.com/jerryong89/MTG_Memory_Match/blob/master/Example.png)
 
 #### Getting Started
