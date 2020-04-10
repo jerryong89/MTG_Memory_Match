@@ -24,6 +24,7 @@ Link: https://memory-match.jerry-ong.com
 ## Preview
 ![alt text](https://github.com/jerryong89/MTG_Memory_Match/blob/master/Example.png)
 
+# Development
 #### Getting Started
 
 1. Clone the repository.
