@@ -2,7 +2,7 @@
 > - Maintained by: `jerryong89`
 
 ## Description 
-A Magic The Gathering themed card matching game stat tracking CSS3 animation
+A Magic The Gathering themed card matching game stat tracking CSS3 animation.
 
 ## Technologies Used:
 - JavaScript
@@ -14,7 +14,7 @@ A Magic The Gathering themed card matching game stat tracking CSS3 animation
 Link: https://memory-match.jerry-ong.com
 
 ## Features
-- Users can click on cards to match the different Magic Cards.
+- Users can click on cards to match the different Magic Cards
 - Users can see a live view of the statistics during the games
     - Games
     - Matches
@@ -32,10 +32,10 @@ Link: https://memory-match.jerry-ong.com
     git clone https://github.com/jerryong89/MTG_Memory-Match.git
     ```
 
-2. Change directory to clone folder
+2. Change directory to clone folder.
 
     ```shell
     cd memory-match/
     ```
 
-3. Go to `index.html` in Text Editor and open in browser
+3. Go to `index.html` in Text Editor and open in browser.
