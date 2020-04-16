@@ -52,6 +52,7 @@ body {
   background-position: center;
   position: absolute;
   background-image: url("../images/mtgcardback.jpg");
+  cursor: pointer;
 }
 
 main div:hover {
