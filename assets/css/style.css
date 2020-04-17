@@ -119,6 +119,9 @@ main div:hover {
 #resetId {
   padding: 20px;
   font-size: 16pt;
+  border-radius: 25px;
+    cursor: pointer;
+    background: rgba(240, 248, 255, 0.60);
 }
 
 /* ----------- iPad 3, 4 and Pro 9.7" ----------- */
