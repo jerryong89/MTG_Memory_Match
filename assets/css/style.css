@@ -13,6 +13,7 @@ aside > * {
   text-align: center;
   font-size: 2vw;
   border-radius: 20pt;
+  background-color:  rgba(240, 248, 255, 0.30);;
 }
 
 main {
@@ -51,48 +52,49 @@ body {
   background-repeat: no-repeat;
   background-position: center;
   position: absolute;
-  background-image: url("../images/mtgcardback.jpg");
+  background-image: url("../images/mtgcardback.png");
+  cursor: pointer;
+  transition: transform .1s;
 }
 
-main div:hover {
-  box-shadow: 0 5px 15px rgba(216, 20, 20, 0.524);
-  border-radius: 7px;
+.card-back:hover {
+  transform: scale(1.1);
 }
 
 .forest {
-  background-image: url("../images/mtgforest.jpg");
+  background-image: url("../images/mtgforest.png");
 }
 
 .island {
-  background-image: url("../images/mtgisland.jpg");
+  background-image: url("../images/mtgisland.png");
 }
 
 .mountain {
-  background-image: url("../images/mtgmountain.jpg");
+  background-image: url("../images/mtgmountain.png");
 }
 
 .plain {
-  background-image: url("../images/mtgplains.jpg");
+  background-image: url("../images/mtgplains.png");
 }
 
 .swamp {
-  background-image: url("../images/mtgswamp.jpg");
+  background-image: url("../images/mtgswamp.png");
 }
 
 .blackLotus {
-  background-image: url("../images/blacklotus.jpg");
+  background-image: url("../images/blacklotus.png");
 }
 
 .garruk {
-  background-image: url("../images/Garruk.jpg");
+  background-image: url("../images/Garruk.png");
 }
 
 .nicolBolas {
-  background-image: url("../images/Nicol-Bolas.jpg");
+  background-image: url("../images/Nicol-Bolas.png");
 }
 
 .nicolBolas2 {
-  background-image: url("../images/Nicol-Bolas2.jpg");
+  background-image: url("../images/Nicol-Bolas2.png");
 }
 
 .hidden {
@@ -110,13 +112,16 @@ main div:hover {
 .modal-content {
   width: 50%;
   text-align: center;
-  background: rgba(240, 248, 255, 0.18);
+  background: rgba(240, 248, 255, 0.60);
   border-radius: 25pt;
 }
 
 #resetId {
   padding: 20px;
   font-size: 16pt;
+  border-radius: 25px;
+  cursor: pointer;
+  background: rgba(0, 100, 0, 0.60);
 }
 
 /* ----------- iPad 3, 4 and Pro 9.7" ----------- */
@@ -163,6 +168,19 @@ main div:hover {
       font-size: 2.5vw;
       border-radius: 20pt;
     }
+
+    .modal-content {
+      margin-left: 5px;
+    }
+
+    .modal-overlay {
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%
+}
 }
 
 /* Landscape */
@@ -208,6 +226,19 @@ main div:hover {
       text-align: center;
       font-size: 1.5vw;
       border-radius: 20pt;
+    }
+
+    .modal-content {
+        width: 36%;
+    }
+
+    .modal-overlay {
+      position: fixed;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      width: 100%
     }
 }
 
@@ -256,6 +287,24 @@ main div:hover {
       display: flex;
       justify-content: center;
     }
+
+    .modal-overlay {
+      position: fixed;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      width: 100%
+    }
+
+    .modal-content{
+      padding: 15px;
+    }
+
+    #resetId {
+    padding: 8px;
+    font-size: 3vw;
+  }
 }
 
 /* Landscape */
@@ -303,4 +352,22 @@ main div:hover {
       margin-top: 20px;
       height: 230px
     }
+
+    .modal-content {
+        width: 45%;
+    }
+
+    .modal-overlay {
+      position: fixed;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      width: 100%
+    }
+
+    #resetId {
+      padding: 5px;
+      font-size: 3vw;
+  }
 }
