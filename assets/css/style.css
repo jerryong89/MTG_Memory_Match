@@ -110,7 +110,7 @@ body {
 }
 
 .modal-content {
-  width: 50%;
+  width: 49%;
   text-align: center;
   background: rgba(240, 248, 255, 0.60);
   border-radius: 25pt;
@@ -122,6 +122,11 @@ body {
   border-radius: 25px;
   cursor: pointer;
   background: rgba(0, 100, 0, 0.60);
+  transition: transform .1s;
+}
+
+#resetId:hover {
+  transform: scale(1.1);
 }
 
 /* ----------- iPad 3, 4 and Pro 9.7" ----------- */
