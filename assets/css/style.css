@@ -54,11 +54,11 @@ body {
   position: absolute;
   background-image: url("../images/mtgcardback.png");
   cursor: pointer;
+  transition: transform .1s;
 }
 
-main div:hover {
-  box-shadow: 0 5px 15px rgba(216, 20, 20, 0.524);
-  border-radius: 7px;
+.card-back:hover {
+  transform: scale(1.1);
 }
 
 .forest {
