@@ -121,7 +121,7 @@ body {
   font-size: 16pt;
   border-radius: 25px;
   cursor: pointer;
-  background: rgba(240, 248, 255, 0.60);
+  background: rgba(0, 100, 0, 0.60);
 }
 
 /* ----------- iPad 3, 4 and Pro 9.7" ----------- */
@@ -179,6 +179,7 @@ body {
   justify-content: center;
   align-items: center;
   height: 100vh;
+  width: 100%
 }
 }
 
@@ -228,17 +229,17 @@ body {
     }
 
     .modal-content {
-      margin-left: -3px;
-      margin-right: 3px
+        width: 36%;
     }
 
     .modal-overlay {
-  position: fixed;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-}
+      position: fixed;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      width: 100%
+    }
 }
 
 /* ----------- iPhone 6, 6S, 7 and 8 ----------- */
@@ -293,10 +294,16 @@ body {
       justify-content: center;
       align-items: center;
       height: 100vh;
+      width: 100%
+    }
+
+    .modal-content{
+      padding: 15px;
     }
 
     #resetId {
     padding: 8px;
+    font-size: 3vw;
   }
 }
 
@@ -346,16 +353,21 @@ body {
       height: 230px
     }
 
+    .modal-content {
+        width: 45%;
+    }
+
     .modal-overlay {
       position: fixed;
       display: flex;
       justify-content: center;
       align-items: center;
       height: 100vh;
+      width: 100%
     }
 
     #resetId {
-    padding: 5px;
-    font-size: 3vw;
-}
+      padding: 5px;
+      font-size: 3vw;
+  }
 }
