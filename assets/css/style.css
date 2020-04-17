@@ -120,8 +120,8 @@ main div:hover {
   padding: 20px;
   font-size: 16pt;
   border-radius: 25px;
-    cursor: pointer;
-    background: rgba(240, 248, 255, 0.60);
+  cursor: pointer;
+  background: rgba(240, 248, 255, 0.60);
 }
 
 /* ----------- iPad 3, 4 and Pro 9.7" ----------- */
@@ -168,6 +168,18 @@ main div:hover {
       font-size: 2.5vw;
       border-radius: 20pt;
     }
+
+    .modal-content {
+      margin-left: 5px;
+    }
+
+    .modal-overlay {
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
 }
 
 /* Landscape */
@@ -214,6 +226,19 @@ main div:hover {
       font-size: 1.5vw;
       border-radius: 20pt;
     }
+
+    .modal-content {
+      margin-left: -3px;
+      margin-right: 3px
+    }
+
+    .modal-overlay {
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
 }
 
 /* ----------- iPhone 6, 6S, 7 and 8 ----------- */
@@ -261,6 +286,18 @@ main div:hover {
       display: flex;
       justify-content: center;
     }
+
+    .modal-overlay {
+      position: fixed;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    #resetId {
+    padding: 8px;
+  }
 }
 
 /* Landscape */
@@ -308,4 +345,17 @@ main div:hover {
       margin-top: 20px;
       height: 230px
     }
+
+    .modal-overlay {
+      position: fixed;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    #resetId {
+    padding: 5px;
+    font-size: 3vw;
+}
 }
