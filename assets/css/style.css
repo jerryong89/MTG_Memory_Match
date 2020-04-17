@@ -51,7 +51,7 @@ body {
   background-repeat: no-repeat;
   background-position: center;
   position: absolute;
-  background-image: url("../images/mtgcardback.jpg");
+  background-image: url("../images/mtgcardback.png");
   cursor: pointer;
 }
 
@@ -61,39 +61,39 @@ main div:hover {
 }
 
 .forest {
-  background-image: url("../images/mtgforest.jpg");
+  background-image: url("../images/mtgforest.png");
 }
 
 .island {
-  background-image: url("../images/mtgisland.jpg");
+  background-image: url("../images/mtgisland.png");
 }
 
 .mountain {
-  background-image: url("../images/mtgmountain.jpg");
+  background-image: url("../images/mtgmountain.png");
 }
 
 .plain {
-  background-image: url("../images/mtgplains.jpg");
+  background-image: url("../images/mtgplains.png");
 }
 
 .swamp {
-  background-image: url("../images/mtgswamp.jpg");
+  background-image: url("../images/mtgswamp.png");
 }
 
 .blackLotus {
-  background-image: url("../images/blacklotus.jpg");
+  background-image: url("../images/blacklotus.png");
 }
 
 .garruk {
-  background-image: url("../images/Garruk.jpg");
+  background-image: url("../images/Garruk.png");
 }
 
 .nicolBolas {
-  background-image: url("../images/Nicol-Bolas.jpg");
+  background-image: url("../images/Nicol-Bolas.png");
 }
 
 .nicolBolas2 {
-  background-image: url("../images/Nicol-Bolas2.jpg");
+  background-image: url("../images/Nicol-Bolas2.png");
 }
 
 .hidden {
