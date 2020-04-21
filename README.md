@@ -22,7 +22,7 @@ Link: https://memory-match.jerry-ong.com
 - Mobile Responsiveness
 
 ## Preview
-![alt text](https://github.com/jerryong89/MTG_Memory_Match/blob/master/Example.png)
+![alt text](https://github.com/jerryong89/MTG_Memory_Match/blob/master/example.png)
 
 # Development
 #### Getting Started
