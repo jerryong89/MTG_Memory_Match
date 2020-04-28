@@ -1,19 +1,21 @@
 h1 {
   font-size: 5vw;
-  color: maroon;
+  color: white;
+  text-shadow: 2px 2px 4px #000000;
 }
 
 aside > * {
   padding-top: 30px;
   padding-bottom: 30px;
-  color: maroon;
+  color: white;
   border: black;
   border-style: solid;
   margin: 10px;
   text-align: center;
   font-size: 2vw;
   border-radius: 20pt;
-  background-color:  rgba(240, 248, 255, 0.30);;
+  background-color:  rgba(240, 248, 255, 0.30);
+  text-shadow: 2px 2px 4px #000000;
 }
 
 main {
@@ -41,14 +43,12 @@ body {
   background-repeat: no-repeat;
   background-position: center;
   position: absolute;
-  border-radius: 7pt ;
 }
 
 .card-back {
   height: 100%;
   width: 100%;
   background-size:contain;
-  border-radius: 6px;
   background-repeat: no-repeat;
   background-position: center;
   position: absolute;
@@ -138,6 +138,7 @@ body {
   and (-webkit-min-device-pixel-ratio: 2) {
     h1 {
       font-size: 6vw;
+      text-shadow: 2px 2px 4px #000000;
     }
     body {
       background-image: url("../images/mtgbackground.jpg");
@@ -166,7 +167,7 @@ body {
       padding-bottom: 20px;
       padding-right: 20px;
       padding-left: 20px;
-      color: maroon;
+      color: white;
       border: black;
       border-style: solid;
       text-align: center;
@@ -196,6 +197,7 @@ body {
   and (-webkit-min-device-pixel-ratio: 2) {
     h1 {
       font-size:4vw;
+      text-shadow: 2px 2px 4px #000000;
     }
 
     body {
@@ -225,12 +227,13 @@ body {
       height: 3%;
       padding-top: 25px;
       padding-bottom: 25px;
-      color: maroon;
+      color: white;
       border: black;
       border-style: solid;
       text-align: center;
       font-size: 1.5vw;
       border-radius: 20pt;
+      text-shadow: 2px 2px 4px #000000;
     }
 
     .modal-content {
@@ -256,6 +259,7 @@ body {
   and (orientation: portrait) {
     h1 {
       font-size:6vw;
+      text-shadow: 2px 2px 4px #000000;
     }
 
     main > * {
@@ -278,12 +282,13 @@ body {
       margin-left: 0px;
       margin-top: -30px;
       margin-bottom: 45px;
-      color: maroon;
+      color: white;
       border: black;
       border-style: solid;
       text-align: center;
       font-size: 3vw;
       border-radius: 20pt;
+      text-shadow: 2px 2px 4px #000000;
     }
 
     body {
@@ -320,6 +325,7 @@ body {
   and (orientation: landscape) {
     h1 {
       font-size:5vw;
+      text-shadow: 2px 2px 4px #000000;
     }
 
     body {
@@ -345,12 +351,13 @@ body {
       margin-left: -23px;
       margin-top: -31px;
       margin-bottom: 45px;
-      color: maroon;
+      color: white;
       border: black;
       border-style: solid;
       text-align: center;
       font-size: 2vw;
       border-radius: 20pt;
+      text-shadow: 2px 2px 4px #000000;
     }
 
     aside {
